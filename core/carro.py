@@ -7,7 +7,6 @@ class Carro(Veiculo):
         self.automatico = automatico
         
     def exibir_detalhes(self):
-        detalhes_veiculo = super().exibir_detalhes()
-        detalhes_carro = f"Número de portas: {self.numeroPortas}\nAutomático: {'Sim' if self.automatico else 'Não'}"
-        return f"{detalhes_veiculo}\{detalhes_carro}"
-    
+        super().exibir_detalhes()
+        print(f"Número de portas: {self.numeroPortas}")
+        print(f"Automático: {'Sim' if self.automatico else 'Não'}")
