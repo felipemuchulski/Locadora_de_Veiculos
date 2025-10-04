@@ -1,6 +1,11 @@
 from veiculo import Veiculo
 
 class Moto(Veiculo):
+    """
+    Classe Moto que herda de veículo
+    Atribui novo parâmetro xilindrada
+    Atribui valor para o método exibir_detalhes
+    """
     def __init__(self, placa, marca, modelo, valorLocacao, categoria, disponivel, cilindrada):
         super().__init__(placa, marca, modelo, valorLocacao, categoria, disponivel)
         self.cilindrada = cilindrada

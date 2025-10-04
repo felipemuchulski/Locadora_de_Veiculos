@@ -1,6 +1,11 @@
 from veiculo import Veiculo
 
 class Caminhao(Veiculo):
+    """
+    Classe Caminhao que herda de veículo
+    Atribui novo parâmetro carga em tonelada
+    Atribui valor para o método exibir_detalhes
+    """
     def __init__(self, placa, marca, modelo, valorLocacao, categoria, disponivel, cargaEmTonelada):
         super().__init__(placa, marca, modelo, valorLocacao, categoria, disponivel)
         self.cargaEmTonelada = cargaEmTonelada

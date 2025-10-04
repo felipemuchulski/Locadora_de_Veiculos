@@ -4,6 +4,13 @@ from core.carro import Carro
 from core.moto import Moto
 
 class CadVeiculos:
+    """
+    Cadastro de veículos pelo seu tipo com cadastrar_veiculo
+    Mostrar o tamanho da lista de veículos com listar_tamanho_veiculos
+    Listar veículos disponíveis com veiculos_disponiveis
+    Buscar veículo pela placa buscar_por_placa
+    """
+    
     def __init__(self):
         self.veiculos = []
         
@@ -35,6 +42,15 @@ class CadVeiculos:
             print(f"O tamanho da lista de veiculos é {counter}")
         else:
             print("Não existe nenhum veículo cadastrado.")  
+            
+    def veiculos_diponiveis(self):
+        indice = 0
+        if len(self.veiculos) != 0:
+            for veiculo in self.veiculos:
+                print(f"{indice}. {veiculo}")
+                indice += 1
+        else:
+            print("Não existe nenhum veículo disponível.")
     
     def buscar_por_placa(self, placa):
         for veiculo in self.veiculos:

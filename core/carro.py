@@ -1,6 +1,11 @@
 from veiculo import Veiculo
 
 class Carro(Veiculo):
+    """
+    Classe Carro que herda de veículo
+    Atribui novos parâmetros numero de portas e automatico
+    Atribui valor para o método exibir_detalhes
+    """
     def __init__(self, placa, marca, modelo, valorLocacao, categoria, disponivel, numeroPortas, automatico):
         super().__init__(placa, marca, modelo, valorLocacao, categoria, disponivel)
         self.numeroPortas = numeroPortas

@@ -1,6 +1,12 @@
 from core.categoria import Categoria
 
 class CadCategoria:
+    """
+    Cadastro de categorias com adicionar_categorias
+    Mostrar o tamanho da lista de categorias com listar_tamanho_categorias
+    Buscar pelo nome da categoria com buscar_categoria_nome
+    Listar categorias disponíveis com categorias_disponíveis
+    """
     def __init__(self):
         self.categorias = []
     
@@ -9,7 +15,7 @@ class CadCategoria:
         self.categorias.append(nova_categoria)
     
         
-    def mostrar_tamanho_categorias(self):
+    def listar_tamanho_categorias(self):
         counter = 0
         
         if len(self.categorias) != 0:
@@ -20,6 +26,15 @@ class CadCategoria:
             
         else:
             print("Lista de categorias está vazia")
+    
+    def categorias_disponiveis(self):
+        indice = 0
+        if len(self.categorias) != 0:
+            for categoria in self.categorias:
+                print(f"{indice}. {categoria}")
+                indice += 1
+        else:
+            print("Não existe nenhuma categoria disponível")
 
     def buscar_categoria_nome(self, nome_categoria):
         for categoria in self.categorias:
