@@ -12,4 +12,4 @@ class Veiculo(ABC):
         
     @abstractmethod
     def exibir_detalhes(self):
-         print(f"Placa: {self._placa}, Marca: {self.marca}, Modelo: {self.modelo}, Valor da Locação: {self.valorLocacao}, Categoria: {self.categoria}, Disponível: {self.disponivel}")
+        ... # Métodos abstratos são somente declarados
