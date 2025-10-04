@@ -8,10 +8,19 @@ class CadCategoria:
         nova_categoria = Categoria(nome, descricao)
         self.categorias.append(nova_categoria)
     
-    def listar_categorias(self):
-        for categoria in self.categorias:
-            print(f"Nome: {categoria.nome}, descrição: {categoria.descricao}")
-    
+        
+    def mostrar_tamanho_categorias(self):
+        counter = 0
+        
+        if len(self.categorias) != 0:
+            while counter <= len(self.categorias):
+                counter += 1
+
+            print(f"O tamanho da lista de categorias é {counter}")
+            
+        else:
+            print("Lista de categorias está vazia")
+
     def buscar_categoria_nome(self, nome_categoria):
         for categoria in self.categorias:
             if categoria.nome == nome_categoria:
