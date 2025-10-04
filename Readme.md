@@ -106,6 +106,7 @@ Scania P360. 10,5 Toneladas. Placa: MNO 1314. Categoria: Utilitário. Diária: R
 ---
 
 ## Regras e Requisitos Técnicos
+1. **Trabalhar com docstrings nas classes e métodos**
 
 ### Funcionalidades obrigatórias:
 
