@@ -25,10 +25,13 @@ class CadVeiculos:
         self.veiculos.append(veiculo)
         return f"Criado log para teste{veiculo}"
     
-    def listar_veiculos(self):
-        for veiculo in self.veiculos:
-            print("Exibindo veículos")
-            print(veiculo)
+    def listar_tamanho_veiculos(self):
+        counter = 0
+        
+        if len(self.veiculos) != 0:
+            while counter <= len(self.veiculos):
+                counter += 1
+            
     
     def buscar_por_placa(self, placa):
         for veiculo in self.veiculos:
