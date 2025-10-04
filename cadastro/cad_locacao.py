@@ -5,11 +5,30 @@ class CadLocacao:
         self.locacoes = []
         
     
-    def inserir_locacao(self, id, **kwargs):
-        if any(locacao.id == id for locacao in self.locacoes):
+    def inserir_locacao(self, identificador, **kwargs):
+        if any(locacao.identificador == identificador for locacao in self.locacoes):
             raise ValueError(f"Já existe este id cadastrado em locações!")
         
-        kwargs['id'] = id
+        kwargs['identificador'] = identificador
+
         
         nova_locacao = Locacao(**kwargs)
         self.locacoes.append(nova_locacao)
+    
+    def listar_tamanho_locacao(self):
+        counter = 0
+        if len(self.locacoes) != 0:
+            while counter <= len(self.locacoes):
+                counter += 1
+
+            print(f"O tamanho da lista de locações é {counter}")
+        else:
+            print("Você não tem nenhuma locação realizada.")
+    
+    def retornar_locacao_id(self, id_locacao):
+        for locacao in self.locacoes:
+            if locacao.identificador == id_locacao:
+                print(f"Foi encontrada uma locação com essa identificação {id_locacao}")
+                return locacao
+            else:
+                print("Não existe uma locação com essa informação.")
