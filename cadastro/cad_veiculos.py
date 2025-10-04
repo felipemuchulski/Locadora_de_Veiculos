@@ -33,7 +33,8 @@ class CadVeiculos:
                 counter += 1
 
             print(f"O tamanho da lista de veiculos é {counter}")
-            
+        else:
+            print("Não existe nenhum veículo cadastrado.")  
     
     def buscar_por_placa(self, placa):
         for veiculo in self.veiculos:
