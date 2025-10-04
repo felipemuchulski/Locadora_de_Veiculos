@@ -31,6 +31,8 @@ class CadVeiculos:
         if len(self.veiculos) != 0:
             while counter <= len(self.veiculos):
                 counter += 1
+
+            print(f"O tamanho da lista de veiculos é {counter}")
             
     
     def buscar_por_placa(self, placa):
