@@ -30,7 +30,7 @@ class CadLocacao:
         else:
             print("Você não tem nenhuma locação realizada.")
     
-    def locacoes_disponiveis(self):
+    def locacoes_realizadas(self):
         indice = 0
         if len(self.locacoes) != 0:
             for locacao in self.locacoes:
