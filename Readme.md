@@ -81,15 +81,15 @@ Scania P360. 10,5 Toneladas. Placa: MNO 1314. Categoria: Utilitário. Diária: R
 
 - **CadCategorias**:  
 - Armazena em um vetor as categorias cadastradas  
-- Métodos: inserir, retornar tamanho, retornar uma categoria por nome  
+- Métodos: inserir, retornar tamanho, retornar uma categoria por nome, retornar categorias disponíveis.
 
 - **CadVeiculos**:  
 - Armazena em um vetor os veículos cadastrados  
-- Métodos: inserir, retornar tamanho, retornar veículo por placa  
+- Métodos: inserir, retornar tamanho, retornar veículo por placa, retornar os veículos que estão disponíveis.  
 
 - **CadLocacao**:  
 - Armazena em um vetor as locações realizadas  
-- Métodos: inserir, retornar tamanho, retornar locação por identificação  
+- Métodos: inserir, retornar tamanho, retornar locação por identificação, retornar as locações realizadas. 
 
 - **MenuOpcoes**:  
 - Gerencia o menu do software  
